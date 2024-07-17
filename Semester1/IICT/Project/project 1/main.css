@@ -1,0 +1,40 @@
+.inline{
+    display: inline;
+}
+
+
+.centre{
+
+    text-align:center;
+    color: black
+}
+
+/*Working on navigation links*/
+.nav-links{
+   /*Specifying the text property to specify the horizontal alignmnet of the text*/
+    text-align:center;
+
+}
+/*Working on the navigation unorder list*/
+.nav-links ul li {
+    /*Displaying the inline element in terms of block*/
+    /*Inline only takes up as much width of its content*/
+    display: inline-block;
+    /*Creating padding spaces in top and right*/
+    padding: 8px 12px;
+    position: relative;
+}
+/*changing the colours for anchor tag for our navigation bar*/
+.nav-links ul li a{
+    color: black;
+    text-decoration=none;
+    font-size:16px;
+}
+
+#color{
+    background-color: floralwhite;
+}
+#endingSection {
+    padding-bottom: 20px;
+    background: #FFD432;
+}
