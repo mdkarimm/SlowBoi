@@ -1,0 +1,218 @@
+/*Setting the all structure for overall page*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.header {
+    /*Settings the minimum height of  the element by adjusting it to 100 viewpoint */
+    min-height: 100vh;
+    width: 100%;
+    /*By setting the linear-gradient colour to the background*/
+    /*Overhere the colour is black darkish colour*/
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Backgroundhomepage.jpg);
+    background-position: center;
+    background-size: cover;
+    /*Settting the positon relative to its normal positon*/
+    position: relative;
+}
+/*Settings the structure for navigation bar*/
+nav {
+    /*Displaying the navigation bar in flex by showing the elements in a row*/
+    display: flex;
+    /*Creating spaces in top and right*/
+    padding: 2% 6%;
+    /*Aliging the flex items to the center of the container*/
+    justify-content: space-between;
+    /*Align the items towards the center*/
+    align-items: center;
+}
+/*Working on navigation links*/
+.nav-links {
+    /*Setting the flex length =1*/
+    flex: 1;
+    /*Specifying the text property to specify the horizontal alignmnet of the text*/
+    text-align: center;
+}
+    /*Working on the navigation unorder list*/
+    .nav-links ul li {
+        /*Displaying the inline element in terms of block*/
+        /*Inline only takes up as much width of its content*/
+        display: inline-block;
+        /*Creating padding spaces in top and right*/
+        padding: 8px 12px;
+        position: relative;
+    }
+        /*changing the colours for anchor tag for our navigation bar*/
+        .nav-links ul li a {
+            color: darkturquoise;
+            text-decoration =none;
+            font-size: 14px;
+        }
+        /*Creating hover to show the after effects*/
+        .nav-links ul li::after {
+            content: ''; /*Inserting the space in the content*/
+            width: 0%; /*Creating the width=0*/
+            height: 2px; /*Specifying the height to 2 pixels*/
+            background: #ffffff; /*Setting the colour white for our hover*/
+            margin: auto; /*Setting the margin to auto*/
+        }
+        /*Creating hover when users navigates to icon or link*/
+        .nav-links ul li:hover::after {
+            /*Setting the width=100 according to the element*/
+            width: 100%;
+        }
+
+.info {
+    /*Setting up the introduction*/
+    width: 90%;
+    color: #ffffff; /*Colour is white*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*setting the element to 50 by x and y axis*/
+    /*To align the text to center*/
+    transform: translate(-50%,-50%)
+}
+
+.order {
+    /*Setting the flex length =1*/
+    flex: 1;
+    /*Specifying the text property to specify the horizontal alignmnet of the text*/
+    text-align: right;
+}
+
+    .order ul li {
+        /*Displaying the inline element in terms of block*/
+        /*Inline only takes up as much width of its content*/
+
+
+        display: inline-block;
+        /*Creating padding spaces in top and right*/
+        padding: 8px 12px;
+        position: relative;
+    }
+        /*Working on the anchor tag*/
+        .order ul li a {
+            color: darkturquoise;
+            font-size: 14px;
+        }
+
+        .order ul li::after {
+            /**/
+            content: ''; /*Inserting the space in the content*/
+            width: 0%; /*Creating the width=0*/
+            height: 2px; /*Specifying the height to 2 pixels*/
+            background: #ffffff; /*Setting the colour white for our hover*/
+            display: block; /*Displaying the block element like p tag which takes on new line and take up the width*/
+            margin: auto; /*Setting the margin to auto*/
+        }
+        /*Creating hover when users navigates to icon or link*/
+        .order ul li:hover::after {
+            width: 100%;
+        }
+/*Famous items*/
+.contents {
+    width =80%;
+    /*Setting the margin top =5*/
+    margin-top: 5%;
+    /*Displaying the elements in a row*/
+    display: flex;
+    /*Justifying the content and creating spaces between*/
+    justify-content: space-between;
+}
+
+.Famous-deals {
+    width =80%;
+    /*Setting the margin top =5*/
+    margin-top: 5%;
+    /*Displaying the elements in a row*/
+    display: flex;
+    /*Justifying the content and creating spaces between*/
+    justify-content: space-between;
+    /*Creating spaces in the top by 100 pixels*/
+    padding-top: 100px;
+}
+
+h1 {
+    /*Creating the header size and weight tone i.e thickness */
+    font =size:36px;
+    font-weight: 600;
+}
+
+h2 {
+    /*Creating the header size and weight tone i.e thickness */
+    font-size: 40px;
+    font-weight: 600;
+    /*Aliging the text to center*/
+    text-align: center;
+    /*setting the border radius by 10 pixels*/
+    border-radius: 10px;
+    /*Creating the margin bottom*/
+
+    margin-bottom: 5%;
+    /*Creating the spaces by 5 in top and right*/
+    padding 5px 5px;
+}
+
+.Famous-food-items {
+    /*setting the length of flex items to 31%*/
+    flex-basis: 31%;
+    /*Setting the background */
+    background: lightblue;
+    /*Setting the border radius to 10px*/
+    border-radius: 10px;
+    /*Creating the margin bottom*/
+    margin-bottom: 5%;
+    /*Creating the spaces by 20 in top and 12 in right*/
+    padding 20px 12px;
+    box-sizing: border-box;
+}
+/*Footer*/
+.footer {
+    /*Setting the width to 100%*/
+    width: 100%;
+    /*Algining the text in the center*/
+    text-align: center;
+    /*Creating the spaces in 30px top*/
+    padding: 30px;
+    background-color: lightblue;
+}
+/*Creating a sign up form*/
+.sign-up-form {
+    /*Creating width */
+    width: 400px;
+    /*Creating a box shadow by adjusting it with colour theme outline*/
+    box-shadow: 0 0 3px 0 lightblue;
+    /*Background colour for the form*/
+    background: #ffffff; /*White*/
+    padding: 20px; /*Creating spaces*/
+    margin: 8% auto; /*Creating the margin by from the top by 8% and rest of them are auto */
+    text-align: center;
+}
+/*Adjusting the sign form header 1*/
+.sign-up-form h1{
+    /*Changing the colour front to adjust with the background*/
+    color:Background;
+    /*Creating the margin bottom by 30px to create space*/
+    margin-bottom:30px;
+}
+.input-box{
+    /*Creating border radius by 20px*/
+    border-radius:20px;
+    /*Creating spaces by 10px*/
+    padding:10px;
+    /*creating the margrin from top is 10 and right is zero*/
+    margin:10px 0;
+    /*Making the width inorder to extend by 90*/
+    width:90%;
+    /*Creating the border line lightblue for input */
+    border:1px solid lightblue;
+
+    
+
+
+}
